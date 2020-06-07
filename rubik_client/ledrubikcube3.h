@@ -35,12 +35,8 @@ static CRGB  leds[NUM_LEDS];
 
 typedef  uint32_t color;
 typedef color edge[3];
-/*void print_valami();
-  static color blue =11;
-  static color purple =5;
-  static color black =8;
-  const int alma = 3;
-  static edge ele = {blue,purple,black};*/
+
+//static edge test_edge = {blue,purple,black};
 
 static color green = CRGB::Green; //green
 static color white = CRGB::White; //white
@@ -61,9 +57,7 @@ void printEEPROM();
 
 
 void turn_side (int side, int directionn); // one turn on the cube change 8 edge
-void copyArray(uint32_t* src, uint32_t* dst, uint32_t len);
 uint32_t circularArr(uint32_t arr[], uint32_t index);
-uint8_t osszeadas(uint8_t a, uint8_t b);
 void copyArray(uint32_t* dst, uint32_t* src,  int len);
 void change_edge(int side, int edge_dst, edge edge_src);
 int circular(int index);

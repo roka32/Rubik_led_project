@@ -25,7 +25,7 @@
 #define GREEN_PIN_B 33
 #define WHITE_PIN_A 25
 #define WHITE_PIN_B 26
-#define RED_PIN_A 27    //14
+#define RED_PIN_A 14    //14
 #define RED_PIN_B 12
 #define ORANGE_PIN_A 13
 #define ORANGE_PIN_B 15
@@ -37,7 +37,6 @@
 static volatile byte aFlag = 0;
 static volatile byte bFlag = 0;
 extern volatile   int8_t encoderPos ;
-extern volatile   int8_t oldEncPos ;
 extern volatile uint8_t turn;
 extern volatile bool senseOfNewTurn ;
 

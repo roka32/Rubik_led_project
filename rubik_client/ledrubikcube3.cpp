@@ -1,14 +1,12 @@
 
 #include "ledrubikcube3.h"
-//#include <FastLED.h>
 #include <algorithm>
 #include <array>
 using namespace std;
-#define FASTLED_INTERRUPT_RETRY_COUNT 1
 
 
-edge tmp_edge[4];
 edge rubik_matrix[6][4];   // 3D array. 6 side of the cube 4 edge on 1 side, 3 sticker in 1 edge
+edge tmp_edge[4];
 uint32_t array_index[] = {0, 1, 2, 3};
 color* pRubikArray = &rubik_matrix[0][0][0];
 color beginnnig_colors[6] = {green, white, red, orange, yellow, blue} ;
